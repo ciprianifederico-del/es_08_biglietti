@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="gestioneAcquisto.php" method="post">
@@ -33,7 +34,16 @@
         <label> Più biglietto
         <input type="radio" name="quantita" value="piu" id="piu"> <br>
         </label>
+        <div id="divAggiuntivi">
+            <p>Biglietti aggiuntivi:
+                <button type="button" id="btnPiu">+</button>
+                <input type="number" name="numAggiuntivi" id="numAggiuntivi" value="1" readonly>
+                <button type="button" id="btnMeno">-</button>
+            </p>
+            <div id="contenitoreAgg"></div>
+        </div>
         <input type="submit">
     </form>
+    <script src="script.js"></script>
 </body>
 </html>

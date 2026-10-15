@@ -1,0 +1,22 @@
+body { 
+    font-family: Arial, sans-serif; 
+    max-width: 600px; 
+    margin: 30px auto; 
+}
+
+fieldset { 
+    margin-bottom: 15px; 
+}
+  label { 
+    display: block; 
+    margin-top: 10px; 
+}
+  #divAggiuntivi { 
+    display: none; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    margin: 10px 0; 
+}
+  .err { 
+    color: red; 
+}
