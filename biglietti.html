@@ -7,18 +7,32 @@
 </head>
 <body>
     <form action="gestioneAcquisto.php" method="post">
-        <label for="nome">Inserisci il nome</label> <br>
-        <input type="text" name="nome" required> <br>
-        <label for="cognome">Inserisci il cognome</label> <br>
-        <input type="text" name="cognome" required> <br>
-        <label for="CF">Inserisci il codice fiscale</label> <br>
-        <input type="text" name="CF"> <br>
-        <label for="settore">Inserisci il settore</label> <br>
-        <select name="settore"> <br>
-        <option value="curva">curva</option> <br>
-        <option value="tribuna centrale">tribuna centrale</option> <br>
-        <option value="tribuna d'onore">tribuna d'onore</option> <br>
-        </select>
+        <label>Inserisci il nome <br>
+            <input type="text" name="nome" required> <br>
+        </label>
+        <label>Inserisci il cognome <br>
+            <input type="text" name="cognome" required> <br>
+        </label>
+        <label>Inserisci il codice fiscale <br>
+            <input type="text" name="CF">
+        </label> <br>
+        <label>Inserisci il settore <br>
+            <select name="settore"> <br>
+                <option value="curva">curva</option> <br>
+                <option value="tribuna centrale">tribuna centrale</option> <br>
+                <option value="tribuna d'onore">tribuna d'onore</option> <br>
+            </select>
+        </label> <br>
+        <label>Inserisci il Codice Promozionale <br>
+            <input type="text" name="sconto">
+        </label> <br>
+        <p>Tipologia acquisto</p> 
+        <label> Biglietto unico
+        <input type="radio" name="quantita" value="unico" id="unico" checked> <br>
+        </label> 
+        <label> Più biglietto
+        <input type="radio" name="quantita" value="piu" id="piu"> <br>
+        </label>
         <input type="submit">
     </form>
 </body>
